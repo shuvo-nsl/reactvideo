@@ -7,7 +7,22 @@ const stunServers = [
     { urls: "stun:stun.l.google.com:19302" },
     { urls: "stun:stun1.l.google.com:19302" },
     { urls: "stun:stun2.l.google.com:19302" },
-    { urls: "stun:stun3.l.google.com:19302" }
+    { urls: "stun:stun3.l.google.com:19302" },
+         {
+        urls: "turn:relay.metered.ca:80",
+        username: "f199e3b4446647c8977d3564",
+        credential: "KkncGqbf9+WRGAZ6",
+      },
+      {
+        urls: "turn:relay.metered.ca:443",
+        username: "f199e3b4446647c8977d3564",
+        credential: "KkncGqbf9+WRGAZ6",
+      },
+      {
+        urls: "turn:relay.metered.ca:443?transport=tcp",
+        username: "f199e3b4446647c8977d3564",
+        credential: "KkncGqbf9+WRGAZ6",
+      }
 ];
 
 const Container = styled.div`
