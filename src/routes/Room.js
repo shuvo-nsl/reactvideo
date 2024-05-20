@@ -49,7 +49,7 @@ const Room = ({ match }) => {
     const roomID = match.params.roomID;
 
     useEffect(() => {
-        socketRef.current = io.connect("https://nodejsvideo.onrender.com");
+        socketRef.current = io.connect("https://nodejsvideo.onrender.com:8000");
         console.log("Client connected to server");
 
         navigator.mediaDevices.getUserMedia({ video: videoConstraints, audio: true }).then(stream => {
